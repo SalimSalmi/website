@@ -22,8 +22,17 @@ body {
 }
 
 @media screen and (min-width: 900px) {
-    font-size: 16px;
+    body {
+        font-size: 16px;
+    }
 }
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+}
+
 
 h1, h2, h3 {
     font-family: 'Inter', sans-serif;
@@ -80,7 +89,6 @@ p {
 
 @media screen and (min-width: 900px) {
     .grid {
-        max-width: 1400px;
         margin-left: auto;
         margin-right: auto;
         grid-template-columns: auto 400px 400px auto;
@@ -89,6 +97,16 @@ p {
         "blank-upper    blue-upper  blue-upper  blue-upper"
         "red-upper      black       blue-lower  blue-lower"
         "red-lower      red-lower   white       blank-lower";
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .grid {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: auto 500px 500px auto;
+        grid-template-rows: 500px 150px 120px;
     }
 }
 
@@ -122,6 +140,7 @@ p {
 
 .profile {
     height: 50vw;
+    max-height: 280px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -169,6 +188,7 @@ p {
     .profile {
         height: auto;
         width: 65%;
+        max-height: inherit;
     }
 
     .blue .content {
@@ -181,7 +201,6 @@ p {
     .blue .content p {
         display: block;
     }
-
 
     .socials {
         width: 400px;
@@ -196,6 +215,19 @@ p {
         display: none;
     }
 }
+
+@media screen and (min-width: 1400px) {
+    .blue .content {
+        width: 1000px;
+        padding-left: 280px;
+        padding-top: 200px;
+        float: none;
+    }
+    .white {
+        width: 360px;
+    }
+}
+
 
 .cv-link {
     font-size: 1.25em;
@@ -245,6 +277,12 @@ main section>* {
 
     main section>h2 {
         text-align: right;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    main {
+        width: 1000px;
     }
 }
 
