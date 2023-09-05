@@ -94,7 +94,7 @@ p {
         margin-left: auto;
         margin-right: auto;
         grid-template-columns: auto 400px 400px auto;
-        grid-template-rows: 400px 150px 120px;
+        grid-template-rows: 450px 150px 120px;
         grid-template-areas: 
         "blank-upper    blue-upper  blue-upper  blue-upper"
         "red-upper      black       blue-lower  blue-lower"
