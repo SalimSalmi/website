@@ -18,31 +18,57 @@ body {
     font-family: 'Crimson Text', serif;
     font-size: 14px;
     line-height: 1.8em;
-    width: calc(var(--desktop-width)*2);
     margin-left: auto;
     margin-right: auto;
     background-color: #E4E0DA;
     position: relative;
-    padding-left: var(--desktop-width);
     color: var(--font);
+    max-width: calc(var(--desktop-width) + 4em);
 }
 
+@media screen and (min-width: 900px) {
+    body {
+        font-size: 14px;
+        padding-left: var(--desktop-width);
+        max-width: calc(var(--desktop-width)*2);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
 body>main {
-    padding: 7.5em 1.5em;
+    padding: 0em 1.5em 2em;
 }
 
 body>main:first-child {
-    position:fixed;
-    width: var(--desktop-width);
-    translate: calc(-1*var(--desktop-width));
-    left:50%;
+    padding: 7.5em 1.5em 2em;
     display:flex;
     flex-direction: column;
+}
+@media screen and (min-width: 900px) {
+    body>main {
+        padding: 7.5em 1.5em 2em;
+    }
+    body>main:first-child {
+        position:fixed;
+        width: var(--desktop-width);
+        translate: calc(-1*var(--desktop-width));
+        left:50%;
+    }
 }
 
 body>main:first-child p{
     padding:1.1em 0;
     font-size:1.25em;
+}
+
+a {
+    color: var(--font);
 }
 
 .profile {
@@ -61,17 +87,6 @@ body>main:first-child p{
     margin-top: -40px;
 }
 
-@media screen and (min-width: 900px) {
-    body {
-        font-size: 14px;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    body {
-        font-size: 16px;
-    }
-}
 
 
 h1, h2, h3 {
