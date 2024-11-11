@@ -169,6 +169,8 @@ p {
     background-color: var(--font);
     border-radius: .5em;
     padding:.5em 1em;
+    margin-bottom: 1em;
+    display:block;
 }
 
 .cv-link i {
